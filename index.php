@@ -12,12 +12,14 @@
 
 <body>
     <img id="splash-logo" src="images/logo.png" />
-    <div class="next-raid"><h3>Next Raid:</h3><p>Emerald Nightmare on Tuesday, 10/4.</p></div>
-    <div class="logs"><h3>Recent Logs</h3>
-    <?php
-        foreach($parses as $p) {
-            $url = 'https://www.warcraftlogs.com/reports/' . $p->id;
-            echo '<a href="'.$url.'">'.$p->title.' on '.date('l, m/d', $p->start/1000).'</a><br/>';
-        }
-    ?>
+    <div class="front-page">
+        <div class="next-raid"><h3>Next Raid:</h3><p>Emerald Nightmare on Tuesday, 10/4.</p></div>
+        <div class="logs"><h3>Recent Logs</h3>
+        <?php
+            foreach($parses as $p) {
+                $url = 'https://www.warcraftlogs.com/reports/' . $p->id;
+                echo '<a href="'.$url.'">'.$p->title.' on '.date('l, m/d', $p->start/1000).'</a><br/>';
+            }
+        ?>
+    </div>
 </body>

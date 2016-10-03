@@ -14,14 +14,17 @@ img#splash-logo {
     padding: 25px;
 }
 
+div.front-page {
+    float: left;
+}
+
 div.next-raid {
-    float:left;
     padding: 25px;
     font-family: 'Bitter';
+    background: #f4f4f4;
 }
 
 div.logs {
-    float:left;
     padding: 25px;
     font-family: 'Bitter';
 }
