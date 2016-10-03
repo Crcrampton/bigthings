@@ -14,6 +14,7 @@ a {
 
 table th {
     text-align: left;
+    padding: 5px 0;
 }
 
 table td {
@@ -41,7 +42,6 @@ div.next-raid {
 div.logs, div.rank {
     padding: 5px 25px;
     font-family: 'Roboto';
-    font-size: 1.17em;
     margin: 15px 0;
     border-left: 1px solid #e9e9e9;
 }
