@@ -4,12 +4,14 @@
 </head>
 
 <?php
+  $rank = json_decode(file_get_contents('http://www.wowprogress.com/guild/us/arthas/Big%20Things/json_rank'));
   $parses = array_reverse(json_decode(file_get_contents('https://www.warcraftlogs.com:443/v1/reports/guild/Big%20Things/Arthas/US?api_key=5d3416a8113bd463b29572016aaa9d0f')));
 ?>
 
 <body>
     <img id="splash-logo" src="images/logo.png" />
     <div class="front-page">
+        <div class="rank"><strong>Realm: <?php echo $rank->realm_rank; ?> | USA: <?php echo $rank->area_rank; ?> | World: <?php echo $rank->world_rank; ?></strong></div>
         <div class="next-raid"><h3>Next Raid:</h3><p>Emerald Nightmare on Tuesday, 10/4.</p></div>
         <div class="logs"><h3>Recent Logs</h3>
         <?php
