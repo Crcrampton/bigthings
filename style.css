@@ -19,9 +19,12 @@ div.front-page {
 }
 
 div.next-raid {
-    padding: 25px;
-    font-family: 'Bitter';
-    background: #f4f4f4;
+    padding: 10px 25px;
+    font-family: 'Oswald';
+    background: #ff8000;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 div.logs {

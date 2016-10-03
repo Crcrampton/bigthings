@@ -1,9 +1,6 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Bitter:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <?php
@@ -18,7 +15,7 @@
         <?php
             foreach($parses as $p) {
                 $url = 'https://www.warcraftlogs.com/reports/' . $p->id;
-                echo '<a href="'.$url.'">'.$p->title.' on '.date('l, m/d', $p->start/1000).'</a><br/>';
+                echo '<a href="'.$url.'" target="_new">'.$p->title.' on '.date('l, m/d', $p->start/1000).'</a><br/>';
             }
         ?>
     </div>
