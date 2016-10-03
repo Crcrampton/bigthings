@@ -11,7 +11,7 @@
 <body>
     <img id="splash-logo" src="images/logo.png" />
     <div class="front-page">
-        <div class="rank"><strong>Realm: <?php echo $rank->realm_rank; ?><br/>USA: <?php echo $rank->area_rank; ?><br/>World: <?php echo $rank->world_rank; ?></strong></div>
+        <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
         <div class="next-raid"><h3>Next Raid:</h3><p>Emerald Nightmare on Tuesday, 10/4.</p></div>
         <div class="logs"><h3>Recent Logs</h3>
         <?php
