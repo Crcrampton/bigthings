@@ -18,8 +18,8 @@ div.front-page {
 }
 
 div.next-raid {
-    padding: 10px 25px;
-    margin: 10px 0;
+    padding: 5px 25px;
+    margin: 15px 0;
     font-family: 'Roboto';
     background: #ff8000;
     color: #fff;
@@ -27,9 +27,9 @@ div.next-raid {
 }
 
 div.logs, div.rank {
-    padding: 25px;
+    padding: 5px 25px;
     font-family: 'Roboto';
     font-size: 1.17em;
-    margin: 10px 0;
+    margin: 15px 0;
     border-left: 1px solid #ccc;
 }
