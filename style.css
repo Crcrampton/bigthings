@@ -10,7 +10,6 @@ body.splash {
 
 img#splash-logo {
     float:left;
-    border-right: 1px solid #e0e0e0;
     padding: 25px;
 }
 
@@ -20,13 +19,17 @@ div.front-page {
 
 div.next-raid {
     padding: 10px 25px;
+    margin: 10px 0;
     font-family: 'Roboto';
     background: #ff8000;
     color: #fff;
-    font-size: 30px;
+    font-size: 1.17em;
 }
 
 div.logs, div.rank {
     padding: 25px;
     font-family: 'Roboto';
+    font-size: 1.17em;
+    margin: 10px 0;
+    border-left: 1px solid #ccc;
 }
