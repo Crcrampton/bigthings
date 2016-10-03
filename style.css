@@ -24,10 +24,9 @@ div.next-raid {
     background: #ff8000;
     color: #fff;
     font-size: 30px;
-    font-weight: 700;
 }
 
 div.logs {
     padding: 25px;
-    font-family: 'Bitter';
+    font-family: 'Roboto';
 }
