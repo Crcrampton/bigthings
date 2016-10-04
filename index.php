@@ -1,6 +1,8 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Bitter:400,700|Roboto:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <?php
@@ -13,7 +15,7 @@
     <div class="wrapper">
         <div id="home">
           <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
-          <div class="next-raid"><h3>Next Raid:</h3><p>Emerald Nightmare on Tuesday, 10/4.</p></div>
+          <div class="next-raid"><h3>Next Raid:</h3><p>Emerald Nightmare on Tuesday, 10/4 at 7:15PM EST</p></div>
         </div>
         <div id="logs" style="display:none;"><h3>Recent Logs</h3>
         <?php
