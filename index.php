@@ -8,7 +8,21 @@
 <script type='text/javascript'>
   $(document).ready(function() {
     $('.slide').click(function() {
+      $('.pane').fadeOut(100, function() {
+        if ($(this).hasClass('logs')) {
+          $('#logs').fadeIn(100);
+        }
+        if ($(this).hasClass('news')) {
+          $('#news').fadeIn(100);
+        }
+      });
       $('#top-bar').animate({marginTop: '0'});
+    });
+    $('.logo').click(function() {
+      $('#top-bar').animate({marginTop: '30vh'});
+      $('.pane').fadeOut(100, function() {
+        $('#home').fadeIn(100);
+      });
     });
   });
 </script>
@@ -19,13 +33,13 @@
 ?>
 
 <body>
-    <div id="top-bar"><div class="wrapper"><img class="logo" src="images/logo.png" /><div class="button slide apply">Apply</div><div class="button slide">Logs</div><div class="button slide">News</div></div></div>
+    <div id="top-bar"><div class="wrapper"><img class="logo" src="images/logo.png" /><div class="button slide apply">Apply</div><div class="button slide logs">Logs</div><div class="button slide news">News</div></div></div>
     <div class="wrapper">
-        <div id="home">
+        <div id="home" class="pane">
           <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
           <div class="next-raid"><h3>Next Raid:</h3><p>Emerald Nightmare on Tuesday, 10/4 at 7:15PM EST</p></div>
         </div>
-        <div id="logs" style="display:none;"><h3>Recent Logs</h3>
+        <div id="logs" class="pane" style="display:none;"><h3>Recent Logs</h3>
         <?php
             foreach($parses as $p) {
                 $url = 'https://www.warcraftlogs.com/reports/' . $p->id;

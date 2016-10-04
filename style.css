@@ -33,6 +33,7 @@ div#top-bar {
 
 div#topbar img.logo {
     width: 240px;
+    cursor: pointer;
 }
 
 div.button {
