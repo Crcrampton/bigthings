@@ -1,11 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: #efefef;
-}
-
-body.splash {
-    background: #f5f5f5;
+    background: #fefefe;
 }
 
 a {
@@ -21,9 +17,14 @@ table td {
     text-align: right;
 }
 
-img#splash-logo {
-    float:left;
-    padding: 25px;
+div#top-bar {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+div#topbar img.logo {
+    
 }
 
 div.front-page {
