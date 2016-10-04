@@ -9,10 +9,10 @@
   $(document).ready(function() {
     $('.slide').click(function() {
       $('.pane').fadeOut(100, function() {
-        if ($(this).hasClass('logs')) {
+        if ($(this).hasClass('logsb')) {
           $('#logs').fadeIn(100);
         }
-        if ($(this).hasClass('news')) {
+        if ($(this).hasClass('newsb')) {
           $('#news').fadeIn(100);
         }
       });
@@ -33,7 +33,7 @@
 ?>
 
 <body>
-    <div id="top-bar"><div class="wrapper"><img class="logo" src="images/logo.png" /><div class="button slide apply">Apply</div><div class="button slide logs">Logs</div><div class="button slide news">News</div></div></div>
+    <div id="top-bar"><div class="wrapper"><img class="logo" src="images/logo.png" /><div class="button slide apply">Apply</div><div class="button slide logsb">Logs</div><div class="button slide newsb">News</div></div></div>
     <div class="wrapper">
         <div id="home" class="pane">
           <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
