@@ -20,9 +20,9 @@ table td {
 div#top-bar {
     width: 100%;
     padding: 25px 0;
-    text-align: center;
     background-color: rgba(255,255,255,.975);
     border-bottom: 1px solid rgba(50,50,50,.15);
+    margin-top: 20%;
 }
 
 .wrapper {
