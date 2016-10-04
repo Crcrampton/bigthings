@@ -8,16 +8,15 @@
 <script type='text/javascript'>
   $(document).ready(function() {
     $('.slide').click(function() {
-      var btn = $(this);
-      $('.pane').fadeOut(1000, function() {
-        if (btn.hasClass('logsb')) {
-          $('#logs').fadeIn(1000);
-        }
-        if (btn.hasClass('newsb')) {
-          $('#news').fadeIn(1000);
-        }
-      });
       $('#top-bar').animate({marginTop: '0'});
+      var btn = $(this);
+      $('.pane').hide();
+      if (btn.hasClass('logsb')) {
+        $('#logs').fadeIn(1000);
+      }
+      if (btn.hasClass('newsb')) {
+        $('#news').fadeIn(1000);
+      }
     });
     $('.logo').click(function() {
       $('#top-bar').animate({marginTop: '30vh'});
