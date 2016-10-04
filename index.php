@@ -6,8 +6,10 @@
 </head>
 
 <script type='text/javascript'>
-  $('.slide').click(function() {
-    $('#top-bar').animate({marginTop: '0'});
+  $(document).ready(function() {
+    $('.slide').click(function() {
+      $('#top-bar').animate({marginTop: '0'});
+    });
   });
 </script>
 
