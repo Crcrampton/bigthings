@@ -66,7 +66,7 @@ div.next-raid {
     float:left;
 }
 
-div.logs, div.rank {
+div.rank {
     padding: 5px 25px;
     font-family: 'Roboto';
     margin: 15px 0;
@@ -74,7 +74,7 @@ div.logs, div.rank {
     float: left;
 }
 
-div.logs a {
+div#logs a {
     background: rgb(255,255,255); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
