@@ -3,12 +3,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type='text/javascript'>
-      $('.slide').click(function() {
-        $('#top-bar').animate({marginTop: '0'});
-      });
-    </script>
 </head>
+
+<script type='text/javascript'>
+  $('.slide').click(function() {
+    $('#top-bar').animate({marginTop: '0'});
+  });
+</script>
 
 <?php
   $rank = json_decode(file_get_contents('http://www.wowprogress.com/guild/us/arthas/Big%20Things/json_rank'));
