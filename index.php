@@ -9,20 +9,20 @@
   $(document).ready(function() {
     $('.slide').click(function() {
       var btn = $(this);
-      $('.pane').fadeOut(100, function() {
+      $('.pane').fadeOut(1000, function() {
         if (btn.hasClass('logsb')) {
-          $('#logs').fadeIn(100);
+          $('#logs').fadeIn(1000);
         }
         if (btn.hasClass('newsb')) {
-          $('#news').fadeIn(100);
+          $('#news').fadeIn(1000);
         }
       });
       $('#top-bar').animate({marginTop: '0'});
     });
     $('.logo').click(function() {
       $('#top-bar').animate({marginTop: '30vh'});
-      $('.pane').fadeOut(100, function() {
-        $('#home').fadeIn(100);
+      $('.pane').fadeOut(1000, function() {
+        $('#home').fadeIn(1000);
       });
     });
   });
