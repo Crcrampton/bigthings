@@ -34,11 +34,16 @@ div#topbar img.logo {
     width: 240px;
 }
 
-div.apply {
-    background: #ccc;
+div.button {
     padding: 10px;
-    font-size: 'Roboto';
+    font-family: 'Roboto';
+    text-transform: uppercase;
     float: right;
+    border-radius: 5px;
+}
+
+div.apply {
+    background: #ff8000;
 }
 
 div.front-page {
