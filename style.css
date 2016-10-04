@@ -19,12 +19,26 @@ table td {
 
 div#top-bar {
     width: 100%;
-    padding: 10px 0;
+    padding: 25px 0;
     text-align: center;
+    background-color: rgba(255,255,255,.975);
+    border-bottom: 1px solid rgba(50,50,50,.15);
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
 }
 
 div#topbar img.logo {
-    
+    width: 240px;
+}
+
+div#topbar .apply {
+    background: #ccc;
+    padding: 10px;
+    font-size: 'Roboto';
+    float: right;
 }
 
 div.front-page {
