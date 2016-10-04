@@ -12,17 +12,16 @@
       var btn = $(this);
       $('.pane').hide();
       if (btn.hasClass('logsb')) {
-        $('#logs').fadeIn(1000);
+        $('#logs').fadeIn(100);
       }
       if (btn.hasClass('newsb')) {
-        $('#news').fadeIn(1000);
+        $('#news').fadeIn(100);
       }
     });
     $('.logo').click(function() {
       $('#top-bar').animate({marginTop: '30vh'});
-      $('.pane').fadeOut(1000, function() {
-        $('#home').fadeIn(1000);
-      });
+      $('.pane').hide();
+      $('#home').fadeIn(100);
     });
   });
 </script>
@@ -39,7 +38,7 @@
           <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
           <div class="next-raid"><h3>Next Raid:</h3><p>Emerald Nightmare on Tuesday, 10/4 at 7:15PM EST</p></div>
         </div>
-        <div id="logs" class="pane" style="display: none;"><h3>Recent Logs</h3>
+        <div id="logs" class="pane" style="display: none;">
         <?php
             foreach($parses as $p) {
                 $url = 'https://www.warcraftlogs.com/reports/' . $p->id;
