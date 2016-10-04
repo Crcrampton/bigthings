@@ -34,7 +34,7 @@ div#topbar img.logo {
     width: 240px;
 }
 
-div#topbar .apply {
+div.apply {
     background: #ccc;
     padding: 10px;
     font-size: 'Roboto';
