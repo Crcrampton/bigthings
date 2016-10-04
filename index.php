@@ -42,7 +42,7 @@
         <?php
             foreach($parses as $p) {
                 $url = 'https://www.warcraftlogs.com/reports/' . $p->id;
-                echo '<a href="'.$url.'" target="_new">'.$p->title.' on '.date('l, m/d', $p->start/1000).'</a><br/>';
+                echo '<a href="'.$url.'" target="_new">'.$p->title.'<div style="float:right">'.date('l, m/d', $p->start/1000).'</div></a>';
             }
         ?>
     </div>
