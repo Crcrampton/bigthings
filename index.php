@@ -3,6 +3,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type='text/javascript'>
+      $('.slide').click(function() {
+        $('#top-bar').animate({marginTop: '0'});
+      });
+    </script>
 </head>
 
 <?php
@@ -11,7 +16,7 @@
 ?>
 
 <body>
-    <div id="top-bar"><div class="wrapper"><img class="logo" src="images/logo.png" /><div class="button apply">Apply</div><div class="button">Logs</div><div class="button">News</div></div></div>
+    <div id="top-bar"><div class="wrapper"><img class="logo" src="images/logo.png" /><div class="button slide apply">Apply</div><div class="button slide">Logs</div><div class="button slide">News</div></div></div>
     <div class="wrapper">
         <div id="home">
           <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
