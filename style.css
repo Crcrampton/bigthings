@@ -21,7 +21,6 @@ table td {
 div#top-bar {
     width: 100%;
     padding: 25px 0;
-    background-color: rgba(255,255,255,.975);
     border-bottom: 1px solid #e9e9e9;
     margin-top: 30vh;
 }
