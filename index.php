@@ -45,5 +45,14 @@
                 echo '<a href="'.$url.'" target="_new"><img class="icon" src="https://cdn2.iconfinder.com/data/icons/66-charts-graphs-and-diagrams/512/Icon_66-512.png" />'.$p->title.'<div style="float:right">'.date('l, m/d', $p->start/1000).'</div></a>';
             }
         ?>
+        </div>
+        <div id="apply" class="pane" style="display:none;">
+          <label>Character Name</label><input type="text" name="cname" />
+          <label>Current Equipped Itemlevel</label><input type="text" name="ilvl" />
+          <label>Spec and Class<br/><span class="apexp">Your desired spec and class ("Holy Paladin", e.g.)</span></label><input type="text" name="class" />
+          <label>Armory Link</label><input type="text" name="armory" /><br/>
+          <label>Raid Experience<br/><span class="apexp">Briefly describe your WoW raiding experience.</span></label><input type="textarea" name="rexp" />
+          <label>Availablity<br/><span class="apexp">Briefly detail your weekly availability.  Big Things currently raids Wednesday/Monday 7:30PM-12:00AM EST.</span></label><input type="textarea" name="avail" />
+        </div>
     </div>
 </body>
