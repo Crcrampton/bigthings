@@ -56,6 +56,7 @@
           <label>Armory Link<br/><span class="apexp">Please use the official battle.net link ("http://us.battle.net/wow/en/character/arthas/Ploob/simple", e.g.)</span></label><input type="text" name="armory" /><br/>
           <label>Raid Experience<br/><span class="apexp">Briefly describe your WoW raiding experience.</span></label><textarea name="rexp" /></textarea>
           <label>Availablity<br/><span class="apexp">Briefly detail your weekly availability.  Big Things currently raids Wednesday/Monday 7:30PM-12:00AM EST.</span></label><textarea name="avail" /></textarea>
+          <button id="go">Submit Application</button>
         </div>
     </div>
 </body>

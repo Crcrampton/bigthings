@@ -118,3 +118,17 @@ div#apply textarea {
     height: 110px;
     font-size: 1.2em;
 }
+
+div#apply button {
+    background: #ff8000;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    float: right;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 10px 25px 0 25px;
+    cursor: pointer;
+}
