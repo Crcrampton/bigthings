@@ -90,3 +90,31 @@ div#logs .icon {
     margin: -7px 10px 0 0;
     float: left;
 }
+
+div#apply label {
+    width: 100%;
+    display: block;
+    Margin-top: 20px;
+    font-family: 'Roboto';
+    padding: 10px 0;
+}
+
+div#apply input[type="text"] {
+    padding: 5px;
+    border: 1px solid #dcdcdc;
+    font-family: 'Roboto';
+    font-size: 2em;
+}
+
+div#apply .apexp {
+    font-size: .8em;
+    color: grey;
+}
+
+div#apply textarea {
+    padding: 5px 10px;
+    font-family: 'Roboto';
+    width: 600px;
+    height: 110px;
+    font-size: 1.2em;
+}
