@@ -33,7 +33,7 @@
 		type: "POST",
 		url: "/app.php",
 		data: { cname : $('input[name="cname"]').val(),
-                btag : $('input[name="btag"]').val()
+                btag : $('input[name="btag"]').val(),
                 ilvl : $('input[name="ilvl"]').val(),
                 spec : $('input[name="class"]').val(),
                 armory : $('input[name="armory"]').val(),
