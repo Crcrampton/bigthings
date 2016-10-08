@@ -1,9 +1,10 @@
 <?php
   mail('crcrampton@gmail.com', 'Big Things Application',
-	   'Character Name: ' . $POST['char'] .
-	   '<br/>Equipped ilvl: ' . $POST['ilvl'] .
-	   '<br/>Spec and Class: ' . $POST['spec'] .
-	   '<br/>Armory: ' . $POST['armory'] .
-	   '<br/><br/>Raid Experience: ' . $POST['rexp'] .
-	   '<br/><br/>Availability: ' . $POST['avail']);
+	   "Character Name: " . $_POST['char'] .
+	   "\nBattleTag: " . $_POST['btag'] .
+	   "\nEquipped ilvl: " . $_POST['ilvl'] .
+	   "\nSpec and Class: " . $_POST['spec'] .
+	   "\nArmory: " . $_POST['armory'] .
+	   "\n\nRaid Experience: " . $_POST['rexp'] .
+	   "\n\nAvailability: " . $_POST['avail']);
 ?>

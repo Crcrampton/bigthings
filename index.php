@@ -33,13 +33,14 @@
 		type: "POST",
 		url: "/app.php",
 		data: { cname : $('input[name="cname"]').val(),
+                btag : $('input[name="btag"]').val()
                 ilvl : $('input[name="ilvl"]').val(),
                 spec : $('input[name="class"]').val(),
                 armory : $('input[name="armory"]').val(),
                 rexp : $('textarea[name="rexp"]').val(),
                 avail : $('textarea[name="avail"]').val() },
 		success: function( results ) {
-		    $('#apply').html('<div class="done">Thanks!  We received your application.<br/><span style="color:grey">We\'ll be in touch.</span></div>');
+		    $('#apply').html('<div class="done">Thanks!  We received your application.<br/><span style="color:grey;font-weight:normal;">We\'ll be in touch.</span></div>');
 		}
 	    });
     });
@@ -68,6 +69,7 @@
         </div>
         <div id="apply" class="pane" style="display:none;">
           <label>Character Name</label><input type="text" name="cname" />
+          <label>BattleTag</label><input type="text" name="btag" />
           <label>Current Equipped Itemlevel</label><input type="text" name="ilvl" />
           <label>Spec and Class<br/><span class="apexp">Your desired spec and class ("Holy Paladin", e.g.)</span></label><input type="text" name="class" />
           <label>Armory Link<br/><span class="apexp">Please use the official battle.net link ("http://us.battle.net/wow/en/character/arthas/Ploob/simple", e.g.)</span></label><input type="text" name="armory" /><br/>

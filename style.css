@@ -130,3 +130,12 @@ div#apply button {
     margin: 30px 0;
     cursor: pointer;
 }
+
+div#apply .done {
+    text-align: center;
+    margin: 100px;
+    font-size: 2em;
+    font-family: 'Roboto';
+    color: #0070dd;
+    font-weight: 700;
+}
