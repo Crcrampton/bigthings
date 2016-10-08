@@ -26,6 +26,23 @@
       $('.pane').hide();
       $('#home').fadeIn(100);
     });
+    $('button#go').click(function() {
+      $(this).text("Submitting...");
+      
+      $.ajax({        
+		type: "POST",
+		url: "/app.php",
+		data: { cname : $('input[name="cname"]').val(),
+                ilvl : $('input[name="ilvl"]').val(),
+                spec : $('input[name="class"]').val(),
+                armory : $('input[name="armory"]').val(),
+                rexp : $('textarea[name="rexp"]').val(),
+                avail : $('textarea[name="avail"]').val() },
+		success: function( results ) {
+		    $('#apply').html('<div class="done">Thanks!  We received your application.<br/><span style="color:grey">We\'ll be in touch.</span></div>');
+		}
+	    });
+    });
   });
 </script>
 
@@ -39,7 +56,7 @@
     <div class="wrapper">
         <div id="home" class="pane">
           <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
-          <div class="next-raid"><h3>Next Raid:</h3><p>Heroic Emerald Nightmare (Core 10) on Sunday, 10/9 at 3:00PM EST</p></div>
+          <div class="next-raid"><h3>Next Raid:</h3><p>Heroic Emerald Nightmare (Core 10) on Sunday, 10/9 at 5:15PM EST</p></div>
         </div>
         <div id="logs" class="pane" style="display: none;">
         <?php
