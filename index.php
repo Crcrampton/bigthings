@@ -26,6 +26,7 @@
       $('.pane').hide();
       $('#home').fadeIn(100);
     });
+    $
     $('button#go').click(function() {
       $(this).text("Submitting...");
       
@@ -55,6 +56,12 @@
 <body>
     <div id="top-bar"><div class="wrapper"><img class="logo" src="images/logo.png" /><div class="button slide applyb">Apply</div><div class="button slide logsb">Logs</div><div class="button slide newsb">News</div></div></div>
     <div class="wrapper">
+        <div id="news" class="pane">
+          <div class="news-item">
+            <img src="images/hxavius.png" />
+            <div class="headline"><h1>Xavius Dies</h1>Congrats to our core 10 for getting Ahead of the Curve.  I'm an idiot and didn't record logs, but believe me, Joe's DPS was good.  Next stop, Mythic progression.</div>
+          </div>
+        </div>
         <div id="home" class="pane">
           <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
           <div class="next-raid"><h3>Next Raid:</h3><p>Normal Emerald Nightmare (Open Invite) on Wednesday, 10/12 at 7:15PM EST.</p></div>
@@ -77,12 +84,6 @@
           <label>Availablity<br/><span class="apexp">Briefly detail your weekly availability.  Big Things currently raids Wednesday/Monday 7:30PM-12:00AM EST.</span></label><textarea name="avail" /></textarea>
           <div style="clear:both;"></div>
           <button id="go">Submit Application</button>
-        </div>
-        <div id="news" class="pane" style="display:none;">
-          <div class="news-item">
-            <img src="images/hxavius.png" />
-            <div class="headline"><h1>Xavius dies!</h1>Congrats to our core 10 for getting Ahead of the Curve.  I'm an idiot and didn't record logs, but believe me, Joe's DPS was good.  Next stop, Mythic progression.</div>
-          </div>
         </div>
     </div>
 </body>
