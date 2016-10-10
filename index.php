@@ -78,5 +78,11 @@
           <div style="clear:both;"></div>
           <button id="go">Submit Application</button>
         </div>
+        <div id="news" class="pane" style="display:none;">
+          <div class="news-item">
+            <img src="images/hxavius.png" />
+            <div class="headline">Xavius dies! Congrats to our core 10 for getting Ahead of the Curve.  I'm an idiot and didn't record logs, but believe me, Joe's DPS was good.  Next stop, Mythic progression.</div>
+          </div>
+        </div>
     </div>
 </body>
