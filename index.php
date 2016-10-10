@@ -57,7 +57,7 @@
     <div class="wrapper">
         <div id="home" class="pane">
           <div class="rank"><table><tr><th>Realm:</th><td><?php echo $rank->realm_rank; ?></td></tr><tr><th>USA:</th><td><?php echo $rank->area_rank; ?></td></tr><tr><th>World:</th><td><?php echo $rank->world_rank; ?></td></tr></table></div>
-          <div class="next-raid"><h3>Next Raid:</h3><p>Heroic Emerald Nightmare (Core 10) on Sunday, 10/9 at 5:15PM EST</p></div>
+          <div class="next-raid"><h3>Next Raid:</h3><p>Normal Emerald Nightmare (Open Invite) on Wednesday, 10/12 at 7:15PM EST.</p></div>
         </div>
         <div id="logs" class="pane" style="display: none;">
         <?php
@@ -81,7 +81,7 @@
         <div id="news" class="pane" style="display:none;">
           <div class="news-item">
             <img src="images/hxavius.png" />
-            <div class="headline">Xavius dies! Congrats to our core 10 for getting Ahead of the Curve.  I'm an idiot and didn't record logs, but believe me, Joe's DPS was good.  Next stop, Mythic progression.</div>
+            <div class="headline"><h1>Xavius dies!</h1>Congrats to our core 10 for getting Ahead of the Curve.  I'm an idiot and didn't record logs, but believe me, Joe's DPS was good.  Next stop, Mythic progression.</div>
           </div>
         </div>
     </div>
