@@ -70,7 +70,7 @@
         <?php
             foreach($parses as $p) {
                 $url = 'https://www.warcraftlogs.com/reports/' . $p->id;
-                echo '<a href="'.$url.'" target="_new"><img class="icon" src="https://cdn2.iconfinder.com/data/icons/66-charts-graphs-and-diagrams/512/Icon_66-512.png" />'.$p->title.'<div style="float:right">'.date('l, m/d', $p->start/1000).'</div></a>';
+                echo '<a href="'.$url.'" target="_new"><img class="icon" src="https://cdn2.iconfinder.com/data/icons/66-charts-graphs-and-diagrams/512/Icon_66-512.png" />'.$p->title.'<div style="float:right">'.date('l, m/d', ($p->start/1000) - 40000).'</div></a>';
             }
         ?>
         </div>
